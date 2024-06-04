@@ -1,6 +1,21 @@
 public class Iphone implements AparelhoTelefonico, NavegadorNaInternet, ReprodutorMusical {
+
+    public static void main(String[] args) {
+        Iphone iphone = new Iphone();
+        iphone.ligar("99999999");
+        iphone.atender();
+        iphone.iniciarCorreioVoz();
+        iphone.exibirPagina("www.google.com");
+        iphone.adicionarNovaAba();
+        iphone.atualizarPagina();
+        iphone.tocar();
+        iphone.pausar();
+        iphone.selecionarMusica("Creep");
+
+
+    }
     @Override
-    public void ligar(String numero) {
+     public void ligar(String numero) {
         System.out.println("Ligando para: "+ numero);
     }
 
@@ -41,6 +56,6 @@ public class Iphone implements AparelhoTelefonico, NavegadorNaInternet, Reprodut
 
     @Override
     public void selecionarMusica(String musica) {
-        System.out.println("Selecionando musica: " +musica);
+        System.out.println("Selecionando musica: " + musica);
     }
 }
